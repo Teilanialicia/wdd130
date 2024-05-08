@@ -59,6 +59,8 @@ aside {
     width: 20em;
     text-align: center;
     background-color: indianred;
+    position: relative;
+    /* position: absolute; */
 
     /* margin: 1rem;
     border: 3px solid rgba(231, 228, 193, 0.825);
@@ -93,9 +95,9 @@ footer {
 }
 
 aside h2 {
-    position: relative;
-    top:40px;
-    left: 0px;
+    position: absolute;
+    left: 123px;
+    top: 20px;
 }
 
 h2 {
