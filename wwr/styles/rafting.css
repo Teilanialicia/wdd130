@@ -76,7 +76,6 @@ div.hero {
 .hero article {
     position: absolute;
     max-width: 700px;
-    max-height: auto;
     top: 35%;
     left: 5%;
     padding: 0;
