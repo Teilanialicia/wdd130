@@ -38,7 +38,7 @@ header {
 nav {
     background-color: var(--nav-background-color);
     font-size: 1.2rem;
-    display: flex;
+    display: flex; 
 }
 
 nav a {
@@ -49,12 +49,12 @@ nav a {
 }
 
 nav a:link, nav a:visited {
-    color: var(--nav-link-color)
+    color: var(--nav-hover-link-color)
 }
 
 nav a:hover {
     color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
+    background-color: var(--nav-link-color);
 }
 
 div.hero {
@@ -90,4 +90,71 @@ div.hero {
     display: block;
     top: 0;
     float: right;
+}
+
+header.grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 35% 60% 5%;
+}
+
+.flex-box {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+
+.flex-box * {
+    display: block;
+}
+
+.adventure-images{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.adventure-images img {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+.history-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.history-section * {
+    padding: 10px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 25px;
+    border-top: 1px solid var(--nav-background-color);
+    background-color: var(--nav-hover-link-color);
+    text-align: center;
+    padding-top: 40px;
+    
+}
+
+.social_media_icons {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+ .social_media_icons img{
+    width: 100px;
+    height: auto;
+ }
+
+.logo {
+    width: 100px;
+    height: auto;   
 }

@@ -129,7 +129,6 @@ nav a:hover {
 main {
     grid-column: 2/3;
     margin: 1rem;
-
 }
 
 aside {
@@ -138,3 +137,4 @@ aside {
     position: relative;
     width: 20rem;
 }
+
