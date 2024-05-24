@@ -138,3 +138,6 @@ aside {
     width: 20rem;
 }
 
+.adventure-images{
+    display: grid;
+}

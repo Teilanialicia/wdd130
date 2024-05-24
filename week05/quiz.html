@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" > -->
+    <style>@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');</style>
+    
+    <link rel="stylesheet" href="quiz.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML and CSS Quiz</h1>
+
+    <main>
+        <form>
+            <fieldset>
+                <div class="form-item column1">
+                <legend>Contant Information</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname">
+                <label for"useremail">User Email:</label>
+                <input type"email" id="useremail" name="useremail">
+                </div>
+
+                <div class="form-item column1">
+                    <label for="browser">What is your favorite internet browser?</label>
+                    <select id="browser" name="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="safari">Safari</option>
+                        <option value="Firefox">Firefox</option>
+                        <option value="edge">Edge</option>
+                        <option value="other">Other</option>
+                    </select> 
+                </div>
+                <div class="form-item1">
+                    <label for="pet">Do you have a pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+            </fieldset>
+            <fieldset>  
+
+                <div class="form-item column2">
+                <label for="q1">What does HTML stand for, and what is its primary purpose?</label>
+                <input type="text" id="q1" name="q1">
+                </div>
+                
+                <div class="form-item column2">
+                <!-- <legend>HTML and CSS Questions</legend> -->
+                <label for="q2">What is the difference between a class and a an ID selector in CSS?</label>
+                <textarea id="q2" name="q2" rows="2" placeholder="Enter short answer here"></textarea>
+                </div>
+                
+                <div class="form-item column2">
+                <label for="q3">What is the difference between margin and padding in CSS?</label>
+                <select id="q3" name="q3">
+                    <option value="chrome">A1</option>
+                    <option value="safari">A2</option>
+                    <option value="Firefox">A3</option>
+                    <option value="edge">A4</option>
+                    <option value="other">A5</option>
+                </select> 
+                </div>
+                
+                <div class="form-item column2">
+                <label for="q4">What is the difference between a class and an ID selector in CSS?</label>
+                <input type="number" id="q4" name="q4">
+                </div>
+
+            </fieldset>
+            <button type="submit">Submit Quiz</button>
+        </form> 
+    </main>
+    <footer>Thank you for taking the quiz</footer>
+</body>
+</html>
