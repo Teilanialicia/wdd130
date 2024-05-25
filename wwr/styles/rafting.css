@@ -140,6 +140,11 @@ footer {
     background-color: var(--nav-hover-link-color);
     text-align: center;
     padding-top: 40px;
+    
+}
+
+footer a {
+    color: #F9D362;
 }
 
 .social_media_icons {
@@ -191,6 +196,3 @@ footer {
 
 }
 
-footer a {
-    color: #F9D362;
-}
