@@ -27,7 +27,8 @@ body {
 
 h1,h3,h4,h5,h6 {
     font-family: var(--heading-font);
-    color: var(--accent1-color)
+    color: var(--accent1-color);
+    /* text-align: center; */
 }
 
 header {
@@ -143,7 +144,7 @@ footer {
     
 }
 
-#footer a {
+a {
     color: #F9D362;
 }
 
@@ -194,5 +195,25 @@ footer {
     font-size: 1.2rem;
     /* font-size: 15.2rem; */
 
+}
+
+div.employeeimg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+img {
+    width: 100px;
+    height: auto; 
+}
+
+figcaption {
+    text-align: center;
+}
+
+.welcome {
+    text-align: center;
 }
 
