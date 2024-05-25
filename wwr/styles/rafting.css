@@ -149,11 +149,48 @@ footer {
 }
 
  .social_media_icons img{
-    width: 100px;
+    width: 50px;
     height: auto;
+    padding-right: 15px;
  }
 
 .logo {
     width: 100px;
     height: auto;   
+}
+
+/* .welcome {
+
+}
+
+.contactform {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 0 1em;
+    margin: 5px;
+}
+
+.contactinfo {
+    grid-column: 7 / 10;
+    grid-row: 2 / 4;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+} */
+
+.button {
+    margin: 1rem;
+    background-color: indianred;
+    text-decoration-color: bisque;
+    color: antiquewhite;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    /* padding: 5rem; */
+    font-size: 1.2rem;
+    /* font-size: 15.2rem; */
+
+}
+
+footer a {
+    color: #F9D362;
 }
