@@ -218,9 +218,7 @@ h1,h3,h4,h5,h6 {
     display: flex;
 } */
 
-.flex-box * {
-    display: block;
-}
+
 
 .adventure-images{
     display: flex;
@@ -433,9 +431,6 @@ fieldset{
     padding: 0;
 }
 
-.contactinfo {
-    padding-left: 20 px;
-}
 
 .map {
     margin-left: 275px;
