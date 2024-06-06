@@ -102,6 +102,8 @@ nav a:link, nav a:visited {
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-link-color);
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
 }
 
 h1,h3,h4,h5,h6 {
@@ -130,42 +132,70 @@ h1,h3,h4,h5,h6 {
     margin: 10px 0 0 0;
   } */
 
-.hero_image {
+.hero-image {
     border-style: none;
 }
 
-.hero_image {
+.hero-image {
     width: 100%;
     height: auto;
 }
 
-.hero {
+
+#hero {
     position: relative;
-    /* display: inline-block; */
+    /* display: inline-block;
+    align-items: center;
+    justify-content: center; */
 }
 
-.overlay_text {
-    position: absolute;
+.overlay-text {
+    /* position: absolute; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* display: flex; */
+    /* top: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* bottom: 0; */
+    /* left: 50%;                        horizontal alignment */
+    /* top: 45%;                         vertical alignment */
+    /*transform: translate(-50%, -45%); /* moves the text halfway of its length and height to correctly place it */
+}
+
+.hero-overlay {
+    position: absolute;  
+    left: 50%;                        /* horizontal alignment */
+    top: 20%;                         /* vertical alignment */
+    transform: translate(-50%, -35%); /* precise centering; see link below */
+}
+
+.hero-overlay * {
+    margin: 0;
+    color: white;
     text-align: center;
-    top: 38%;
-    left: 36%;
+    margin-bottom: 3%;
+}
+
+#hero h1 {
     color: white;
 }
 
-h1 {
-    position: absolute;
-    text-align: center;
-    top: 25%;
-    left: 41%;
+.home-button {
+    background-color: #656D4A;
     color: white;
-
+    border: none;
+    border-radius: 12px;
+    padding: .75rem;
+    font-size: 1.2rem;
+    font-family: arvo;
 }
 
-.home_button {
-    top: 50%;
-    left: 42%;
-    position: absolute;
+.home-button:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-link-color);
 }
+
 
 
 /*******************************************************
@@ -174,20 +204,19 @@ h1 {
 *
 ********************************************************/
 
-
+/* #hero {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+} */
 
 /* HERE is where the hero heading 1 is! */
-.hero h1 {
-    position: absolute;
-    top: 0%;
-    left: 5%;
-}
+
 
 .flex-box {
     justify-content: space-around;
     align-items: center;
     display: flex;
-}
+} */
 
 .flex-box * {
     display: block;
@@ -212,13 +241,11 @@ h1 {
 
 .three-column-grid * {
     padding: 10px;
-    
 }
 
 .three-column-grid p {
     margin: 0;
     padding: 0;
-    
 }
 
 footer {
@@ -237,7 +264,7 @@ footer {
     
 }
 
-.social_media_icons {
+.social-media-icons {
 
     grid-column-start:5;
     padding-top: 25px; 
@@ -247,7 +274,7 @@ footer {
 
 }
 
- .social_media_icons img{
+ .social-media-icons img{
     width: 50px;
     height: auto;
     padding-right: 15px;
@@ -276,6 +303,13 @@ footer {
 
 }
 
+.button:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-link-color);
+}
+
 figcaption {
     text-align: center;
 }
@@ -296,18 +330,24 @@ figcaption {
     grid-row: 3;
   } */
 
-/* p {
-    text-align: left;
-} */
+p {
+    text-align: center;
+}
+
 .contactinfo {
     text-align: center;
 }
 
-.form_button {
+.form-button {
     margin-left: 565px;
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: 50px;
+}
+
+.form-button:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
 }
 
 address {
@@ -325,7 +365,7 @@ fieldset{
     margin: 0 auto;
 }
 
-.card_img {
+.card-img {
     border: 10px solid #283618;
     background-size: contain;
     max-width: 100%;
@@ -333,11 +373,16 @@ fieldset{
     width: auto;
 }
 
+.card-img:hover{
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
 
 #background {
-    height: 120vh;
+    height: 80vh;
     /* background color should be (light) #DDA15E or (dark) #BC6C25 */
     background-color:#656D4A;
+    position: relative;
     /* display: grid; */
     /* vertical-align: middle; */
 }
@@ -349,23 +394,24 @@ fieldset{
     padding-right: 30px; 
     padding-top: 50px;
     padding-bottom: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-50%);
 }
 
-
-
 .mountains {
-    max-width: 60%;
     height: auto;
+    max-width: 80vh;
     float: left;
 }
 
 .message p {
     color: white;
-    text-align: center;
 }
 
-.message_button {
-  margin-left: 150px;
+.message-button:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
 }
 
 .message h2 {
@@ -374,7 +420,7 @@ fieldset{
     margin-top: 0;
 }
 
-.vertical_flex {
+.vertical-flex {
     justify-content: space-around;
     align-items: center;
     display: flex;
@@ -382,7 +428,7 @@ fieldset{
     margin: 2rem;
 }
 
-.card_title {
+.card-title {
     margin: 0;
     padding: 0;
 }
@@ -400,4 +446,44 @@ fieldset{
     width: 300px;
     height:auto;
     
+}
+
+.history-section p {
+    padding-left: 5%;
+    padding-right: 5%;
+    /* transform: translate(-5%, -5%); */
+}
+
+.history-section h4 {
+    text-align: center;
+}
+
+tbody {
+    margin: 20px;
+}
+
+table.trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    border-radius: 10px; /* This gives the table trips corners */
+    overflow: hidden; /* Ensures the border-radius is applied correctly */
+}
+
+.trips-table th, .trips-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.trips-table th {
+    background-color: #f2f2f2;
+}
+
+.trips-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.signup-form{
+    color: white;
 }

@@ -10,7 +10,7 @@
 </head>
 <body>
     <header id="navbar" class="grid">
-        <a id="logo_link" href="index.html">
+        <a id="logo-link" href="index.html">
             <img class="logo" src="images/logo.png" alt="Dry Oar.Co logo">
         </a>
         <nav class="flex-box">
@@ -20,40 +20,65 @@
             <a href="contact.html">Contact Us</a>
         </nav>
     </header>
-
     <div id="hero">
-        <img class="hero_image" src="images/hero_img.webp" alt="A scenic rafting route through a river gorge">
-        <h1>Dry Oar</h1>
-        <p class="overlay_text">Come join the adventure!</p>
-        <button type="submit" class="button home_button">Book Now</button> 
+        <img class="hero-image" src="images/hero-img.webp" alt="A scenic rafting route through a river">
+        <div class="hero-overlay vertical-flex">
+            <h1>Dry Oar</h1>
+            <p class="overlay-text">Come Join The Adventure!</p>
+            <a href="/wdd130/wwr/trips.html"><button type="submit" class="home-button">Book Now</button> </a>
+        </div>
     </div>
    
-    <main class="home_grid">
+    <main class="home-grid">
 
         <div class="three-column-grid">
-            <section class="river_card vertical_flex">
-                <img class="card_img" src="images/rivers.jpg" alt="river in forest">
-                <img class="icon" src="images/river_icon.png" alt="river icon">
-                <h2 class="card_title">Rivers</h2>
+            <section class="river-card vertical-flex">
+                <img class="card-img" src="images/rivers.jpg" alt="river in forest">
+                <img class="icon" src="images/river-icon.png" alt="river icon">
+                <h2 class="card-title">Rivers</h2>
             </section>
-            <section class="camping_card vertical_flex">
-                <img class="card_img" src="images/camping.jpg" alt="tent in mountains">
-                <img class="icon" src="images/fire_icon.png" alt="fire icon">
-                <h2 class="card_title">Camping</h2>
+            <section class="camping-card vertical-flex">
+                <img class="card-img" src="images/camping.jpg" alt="tent in mountains">
+                <img class="icon" src="images/fire-icon.png" alt="fire icon">
+                <h2 class="card-title">Camping</h2>
             </section>
-            <section class="rapids_card vertical_flex">
-                <img class="card_img" src="images/rapids.jpg" alt="rafting boat">
+            <section class="rapids-card vertical-flex">
+                <img class="card-img" src="images/rapids.jpg" alt="rafting boat">
                 <img class="icon" src="images/oars.png">
-                <h2 class="card_title">Rapids</h2>
+                <h2 class="card-title">Rapids</h2>
             </section>
         </div>
         <div id="background">
             <section class="message">
                 <img class="mountains" src="images/mountains.jpg" alt="misty mountains">
-                <h2>More Than Just The Thrill</h2>
-                <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it's way more than just the rapids. It's a great way to get away from it all and relax amongst all the beauty of the great outdoors. </p>
-                <button href="trips.html" type="submit" class="button message_button">Join Us</button>
+                <div class="vertical-flex">
+                    <h2>More Than Just The Thrill</h2>
+                    <p>Enjoy the breathtaking scenery. From valleys, meadows, canyons, and high peaks; it's way more than just the rapids. It's a great way to get away from it all and relax amongst all the beauty of the great outdoors. </p>
+                    <a href="/wdd130/wwr/trips.html"><button href="trips.html" type="submit" class="button message-button">Join Us</button></a>
+                    <div class="signup-form-div">
+                        <div class="signup-container">
+                            <p>Be the first to know! Sign up to our newsletter to stay in touch.</p>
+                    <form class="signup-form">
+                    <fieldset>
+                            <div class="form-input signup-form">
+                                <label for="fullname">Name:</label>
+                                <input type="text" id="fullname" name="username" >
+                            </div>
+                            <div class="form-input signup-form">
+                                <label for="email">e-Mail:</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                            <!-- <div class="form-input"> 
+                                <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
+                                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                            </div>  -->
+                    </fieldset>
+                </form>
+              
+                </div>
                 
+                </div>
+                <button class="button" type="submit">Sign Up</button>
             </section>
         </div>
     </main>
@@ -63,17 +88,17 @@
 
         <!-- <div></div> -->
         <p class="copyright">Dry Oar © 2024 - Teilani Freeman</p>
-        <a href="site-plan-rafting.html">Site Plan</a>
+        <a href="https://app.moqups.com/Cys6RAyTSUBVTvqKCSBpUQOWdjnVbC0M/view/page/afe4cf979">Home Wireframe</a>
         <a href="contact.html">Contact Us</a>
-        <div class="social_media_icons"> 
+        <div class="social-media-icons"> 
             <a href="www.facebook.com">
-                <img src="images/facebook_icon.png" alt="Facebook icon">
+                <img src="images/facebook-icon.png" alt="Facebook icon">
             </a>
             <a href="www.twitter.com">
-                <img src="images/twitter_icon.png" alt="Twitter icon">
+                <img src="images/twitter-icon.png" alt="Twitter icon">
             </a>
             <a href="www.instagram.com">
-                <img src="images/instagram_icon.png" alt="Instagram icon">
+                <img src="images/instagram-icon.png" alt="Instagram icon">
             </a>
         </div>
     
