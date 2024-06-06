@@ -12,14 +12,6 @@
     /* possible other shade of green #656D4A #5B7549 */
     --accent2-color: #656D4A;
 
-    /* .montserrat-<uniquifier> {
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: <weight>;
-        font-style: normal;
-      } 
-      
-     */
     --heading-font: 'arvo', serif;
     --paragraph-font: "Montserrat", sans-serif;
     --h-font: 'arvo', 'serif';
@@ -125,12 +117,6 @@ h1,h3,h4,h5,h6 {
 *
 ********************************************************/
 
-/* .home-title {
-    font-family: var(--heading-font);
-    color: var(--color-white);
-    font-size: 2em;
-    margin: 10px 0 0 0;
-  } */
 
 .hero-image {
     border-style: none;
@@ -144,24 +130,8 @@ h1,h3,h4,h5,h6 {
 
 #hero {
     position: relative;
-    /* display: inline-block;
-    align-items: center;
-    justify-content: center; */
 }
 
-.overlay-text {
-    /* position: absolute; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* display: flex; */
-    /* top: 0; */
-    /* left: 0; */
-    /* right: 0; */
-    /* bottom: 0; */
-    /* left: 50%;                        horizontal alignment */
-    /* top: 45%;                         vertical alignment */
-    /*transform: translate(-50%, -45%); /* moves the text halfway of its length and height to correctly place it */
-}
 
 .hero-overlay {
     position: absolute;  
@@ -204,19 +174,11 @@ h1,h3,h4,h5,h6 {
 *
 ********************************************************/
 
-/* #hero {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-} */
-
-/* HERE is where the hero heading 1 is! */
-
-
 .flex-box {
     justify-content: space-around;
     align-items: center;
     display: flex;
-} */
+} 
 
 
 .three-column-grid {
@@ -300,21 +262,6 @@ figcaption {
     text-align: center;
 }
 
-
-/* .welcome h1 {
-    padding: 0.25rem;
-    margin: 0;
-    grid-column: 4/8;
-    grid-row: 2;
-    
-  }
-
-.welcome p {
-    padding: 0.5em;
-    margin: 0;
-    grid-column: 4/8;
-    grid-row: 3;
-  } */
 
 p {
     text-align: center;
