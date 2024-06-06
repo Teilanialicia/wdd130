@@ -219,18 +219,6 @@ h1,h3,h4,h5,h6 {
 } */
 
 
-
-.adventure-images{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.adventure-images img {
-    padding: 10px;
-    width: 100%;
-    height: auto;
-}
-
 .three-column-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
